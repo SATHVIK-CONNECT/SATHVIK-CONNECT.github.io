@@ -3,16 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="styles.css" rel="stylesheet" />
-    <title>Connect</title>
-    <link rel="icon" type="image/ico" href="Icon_Tabs.ico" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Profile</title>
   </head>
   <body>
     <header>
-      <a href="">Home</a>
+      <button data-page="page1">Home</button>
+      <button data-page="page2">Skills</button>
+      <button data-page="page3">Achivements</button>
+      <button data-page="page4">Projects</button>
+      <button data-page="page5">Events</button>
     </header>
     <section>
-      <a href="">Skills</a>
+      <div class="div" id="page1">
+        <div class="section-head">P R O F I L E</div>
+        <div class="section-content profile">
+          <div class="pic">
+            <h1>S A T H V I K</h1>
+            <img src="" />
+            <h1>P A L I V E L A</h1>
+          </div>
+          <div class="resume"></div>
+        </div>
+      </div>
+      <div class="div" id="page2">
+        <div class="section-head">S K I L L S</div>
+        <h1 class="fnrtend">Front-end</h1>
+        <div class="section-content">
+          <div data-page="skill-card1" style="background: #34a853" class="card">
+            <div class="cardinner">HTML</div>
+          </div>
+          <div data-page="skill-card2" style="background: #4285f4" class="card">
+            <div class="cardinner">CSS</div>
+          </div>
+          <div data-page="skill-card3" style="background: #fbbc05" class="card">
+            <div class="cardinner">PHP</div>
+          </div>
+          <div data-page="skill-card4" style="background: #ea4335" class="card">
+            <div class="cardinner">JavaScript</div>
+          </div>
+
+          <div class="card-details" id="skill-card1">HTML, CSS, JavaScript</div>
+          <div class="card-details" id="skill-card2">Python, Java</div>
+          <div class="card-details" id="skill-card3">SQL, MySql</div>
+          <div class="card-details" id="skill-card4">Data Analysis</div>
+        </div>
+
+        <h1 class="bckend" style="margin-top: 20px">Back-end</h1>
+        <div class="section-content">
+          <div data-page="skill-card1" style="background: #f57f34" class="card">
+            <div class="cardinner">Python</div>
+          </div>
+          <div data-page="skill-card2" style="background: #8c1bab" class="card">
+            <div class="cardinner">Java</div>
+          </div>
+          <div data-page="skill-card3" style="background: #54e38e" class="card">
+            <div class="cardinner">Django</div>
+          </div>
+          <div data-page="skill-card4" style="background: #7367f0" class="card">
+            <div class="cardinner">PHP</div>
+          </div>
+
+          <div class="card-details" id="skill-card1">HTML, CSS, JavaScript</div>
+          <div class="card-details" id="skill-card2">Python, Java</div>
+          <div class="card-details" id="skill-card3">SQL, MySql</div>
+          <div class="card-details" id="skill-card4">Data Analysis</div>
+        </div>
+        <h1 class="db" style="margin-top: 20px">Database</h1>
+        <div class="section-content">
+          <div data-page="skill-card1" style="background: #d279ee" class="card">
+            <div class="cardinner">SQL</div>
+          </div>
+          <div data-page="skill-card2" style="background: #1da5f2" class="card">
+            <div class="cardinner">PHP.admin</div>
+          </div>
+          <div data-page="skill-card3" style="background: #7367f0" class="card">
+            <div class="cardinner"></div>
+          </div>
+          <div data-page="skill-card4" style="background: #ea4335" class="card">
+            <div class="cardinner"></div>
+          </div>
+
+          <div class="card-details" id="skill-card1">HTML, CSS, JavaScript</div>
+          <div class="card-details" id="skill-card2">Python, Java</div>
+          <div class="card-details" id="skill-card3">SQL, MySql</div>
+          <div class="card-details" id="skill-card4">Data Analysis</div>
+        </div>
+      </div>
+      <div class="div" id="page3">
+        <div class="section-head">A C H I V E M E N T S - C E R T I F I C A T E S</div>
+        <div class="section-content sec-vert">
+          <div data-page="achv-card1" class="card card-horiz">
+            <div class="carder">
+              <div class="icon"></div>
+              <div class="desc"></div>
+            </div>
+          </div>
+          <div data-page="achv-card2" class="card card-horiz"></div>
+          <div data-page="achv-card3" class="card card-horiz"></div>
+          <div data-page="achv-card4" class="card card-horiz"></div>
+          <div data-page="achv-card5" class="card card-horiz"></div>
+
+          <div class="card-details" id="achv-card1">Achieved</div>
+          <div class="card-details" id="achv-card2">Success</div>
+        </div>
+      </div>
+      <div class="div" id="page4">
+        <div class="section-head">P R O J E C T S</div>
+        <div class="section-content sec-vert">
+          <div data-page="pro-card1" class="card card-horiz"></div>
+          <div data-page="pro-card2" class="card card-horiz"></div>
+
+          <div class="card-details" id="pro-card1">Achieved</div>
+          <div class="card-details" id="pro-card2">Success</div>
+        </div>
+      </div>
+      <div class="div" id="page5">
+        <div class="section-head">E V E N T S</div>
+        <div class="section-content sec-vert">
+          <div data-page="eve-card1" class="card card-horiz"></div>
+          <div data-page="eve-card2" class="card card-horiz"></div>
+
+          <div class="card-details" id="eve-card1">Achieved</div>
+          <div class="card-details" id="eve-card2">Success</div>
+        </div>
+      </div>
     </section>
   </body>
+  <script src="script.js"></script>
 </html>
