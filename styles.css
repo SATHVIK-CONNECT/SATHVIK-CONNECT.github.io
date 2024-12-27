@@ -138,15 +138,18 @@ section {
 }
 .carder {
   display: flex;
+  img {
+    border-radius: 20px;
+  }
 }
-.icon {
+/* .icon {
   height: 100%;
   border: 1px solid black;
   background: #131313;
-}
+} */
 
 .desc {
-  padding: 10px;
+  padding: 20px;
 }
 
 /* Hover Effect - Clip-path() */
