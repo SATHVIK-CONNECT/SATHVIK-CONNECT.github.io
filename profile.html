@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial,
+        sans-serif;
+      font-size: x-large;
+      user-select: none;
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      background: #eeeeee;
+      /* padding-bottom: 50px; */
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center; */
+      /* align-items: center; */
+      gap: 50px;
+    }
+    .button {
+      padding: 10px 30px;
+      font-size: large;
+      border-radius: 5px;
+      color: white;
+      font-weight: bold;
+      background: #aa00ff;
+      box-shadow: 0 0 5px #aa00ff;
+      cursor: pointer;
+      transition: transform 0.7s;
+      border: none;
+      position: relative;
+    }
+    .button:hover {
+      position: relative;
+      transform: translateY(-10px);
+    }
+    .profilelogo {
+      border-radius: 50px;
+      background: #aa00ff;
+      padding: 10px;
+      color: white;
+    }
+    header {
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      width: 100%;
+      background: #eeeeee;
+      border: 1px solid white;
+      display: flex;
+      border-bottom: 1px solid #eeeeee;
+      /* box-shadow: 0 0 50px black; */
+      font-weight: bold;
+      font-size: larger;
+      color: black;
+      padding: 0px 30px;
+      gap: 70px;
+      justify-content: space-between;
+      align-items: center;
+      div {
+        display: flex;
+        gap: 70px;
+      }
+    }
+    @keyframes appear {
+      from {
+        scale: 0.5;
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+        scale: 1;
+      }
+    }
+    @keyframes appear1 {
+      from {
+        /* opacity: 0; */
+        transform: translateX(-100px);
+      }
+      to {
+        /* opacity: 1; */
+        /* transform: translateX(0px); */
+      }
+    }
+    @keyframes appear2 {
+      from {
+        /* opacity: 0; */
+        transform: translateX(100px);
+      }
+      to {
+        /* opacity: 1; */
+        /* transform: translateX(0px); */
+      }
+    }
+    section {
+      height: 100%;
+      min-height: 100%;
+      max-height: 100%;
+      padding: 40px 70px;
+      border: 1px solid #eeeeee;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      .home {
+        padding: 100px 0px;
+        display: flex;
+        justify-content: space-between;
+        border: 1px solid #eeeeee;
+
+        .left {
+          animation: appear 5s linear;
+          animation-timeline: view();
+          animation-range: entry 0 cover 40%;
+          width: 50%;
+        }
+        .right {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          animation: appear 5s linear;
+          animation-timeline: view();
+          animation-range: entry 0 cover 40%;
+          width: 50%;
+          height: 400px;
+          max-height: 400px;
+          background: #eeeeee;
+          border: 1px solid #eeeeee;
+          padding: 100px;
+          overflow: hidden;
+          .profileBg {
+            overflow: hidden;
+            width: 500px;
+            height: 500px;
+            max-height: 500px;
+            position: relative;
+            top: 200px;
+            border-radius: 50%;
+            background: #aa00ff;
+            box-shadow: 0px 0px 30px grey;
+          }
+        }
+      }
+      h1 {
+        font-size: 100px;
+        font-weight: bolder;
+      }
+      .skill,
+      .achievement {
+        border: 1px solid #eeeeee;
+        padding: 150px 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+        .skillCard,
+        .achieveCard {
+          height: 400px;
+          min-height: 300px;
+          width: 500px;
+          background: #ffffff;
+          border-radius: 15px;
+          animation: appear 5s linear;
+          animation-timeline: view();
+          animation-range: entry 0 cover 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 50px;
+          color: black;
+          font-size: xx-large;
+          font-weight: bold;
+          border: 1px solid transparent;
+          box-shadow: 0px 0px 30px rgb(201, 183, 183);
+        }
+      }
+      .project {
+        border: 1px solid #eeeeee;
+        padding: 150px 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 100px;
+
+        .projectCard {
+          height: 400px;
+          min-height: 300px;
+          width: 1000px;
+          background: #aa00ff;
+          box-shadow: 0 0 30px rgb(201, 183, 183);
+          border-radius: 5px;
+          border-bottom-right-radius: 50px;
+          border-top-right-radius: 50px;
+          animation: appear1 5s linear;
+          animation-timeline: view();
+          animation-range: entry 0 cover 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          font-size: xx-large;
+          font-weight: bold;
+        }
+        .pcr {
+          align-self: flex-end;
+          border-radius: 5px;
+          border-top-left-radius: 50px;
+          border-bottom-left-radius: 50px;
+          animation: appear2 5s linear;
+          animation-timeline: view();
+          animation-range: entry 0 cover 40%;
+        }
+      }
+
+      .event {
+        .eventCard {
+        }
+      }
+    }
+  </style>
+  <body>
+    <header>
+      <tag><span class="profilelogo">P</span> Profile</tag>
+      <div>
+        <tag>Skills</tag>
+        <tag>projects</tag>
+        <tag>Achievements</tag>
+        <tag>Events</tag>
+      </div>
+      <tag class="button">Contact</tag>
+    </header>
+    <section>
+      <div class="home" id="home">
+        <tag class="left"
+          ><h1>Hello,</h1>
+          <h1>
+            I'm
+            <span style="color: #aa00ff; font-size: 100px; font-weight: bolder"
+              >Sathvik Palivela</span
+            >!
+          </h1>
+          <br />
+          <p style="text-align: justify">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, ratione!
+            Dolorum doloribus cumque et eveniet culpa sed molestiae! Repellat, quibusdam. Quos
+            cupiditate velit hic quae officiis ipsum illum enim facere! Numquam, mollitia? Minus ut
+            amet et? Suscipit recusandae optio numquam. Corporis, laudantium nam ipsa vero quidem
+            minus ad laboriosam cumque!
+          </p>
+        </tag>
+        <tag class="right"><tag class="profileBg"></tag></tag>
+      </div>
+      <!-- <div>Skills</div> -->
+
+      <div class="achievement">
+        <tag class="achieveCard" style="display: flex; flex-direction: column; gap: 30px"
+          ><h3 style="font-size: xx-large; font-weight: bold; align-self: flex-start">
+            Python Programming
+          </h3>
+          <p style="text-align: justify; padding-bottom: 20px">
+            To work with backend tools, AI through Machine learning, Deep learning algorithms
+          </p>
+
+          <hr
+            style="
+              height: 10px;
+              width: 100%;
+              background: red;
+              border: 1px solid red;
+              border-radius: 10px;
+            "
+        /></tag>
+        <tag class="achieveCard" style="display: flex; flex-direction: column; gap: 30px"
+          ><h3 style="font-size: xx-large; font-weight: bold; align-self: flex-start">
+            Full Stack
+          </h3>
+          <p style="text-align: justify; padding-bottom: 20px">
+            Including front-end technologies and back-end technologies with database connectivity
+          </p>
+          <hr
+            style="
+              height: 10px;
+              width: 100%;
+              background: red;
+              border: 1px solid red;
+              border-radius: 10px;
+            "
+        /></tag>
+        <tag class="achieveCard" style="display: flex; flex-direction: column; gap: 30px"
+          ><h3 style="font-size: xx-large; font-weight: bold; align-self: flex-start">
+            Java Programming
+          </h3>
+          <p style="text-align: justify; padding-bottom: 20px">
+            From the Java libraries and interfaces to JDBC (Java Data Base Connectivity)
+          </p>
+          <hr
+            style="
+              align-self: flex-start;
+
+              height: 10px;
+              width: 50%;
+              background: red;
+              border: 1px solid red;
+              border-radius: 10px;
+            "
+        /></tag>
+      </div>
+      <div class="skill" id="skill">
+        <tag class="skillCard">Front end</tag>
+        <tag class="skillCard">Back End</tag>
+        <tag class="skillCard">Personal</tag>
+      </div>
+      <div class="project" id="project">
+        <tag class="projectCard pcl"></tag>
+        <tag class="projectCard pcr"></tag>
+        <tag class="projectCard pcl"></tag>
+        <tag class="projectCard pcr"></tag>
+      </div>
+      <div class="event">
+        <tag class="eventCard"></tag>
+      </div>
+    </section>
+  </body>
+</html>
